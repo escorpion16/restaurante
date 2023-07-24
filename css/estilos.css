@@ -108,7 +108,13 @@ img {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
+.btn-verde {
+    background-color: var(--verde);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--parrafos);
+}
 
 /* ENCABEZADO */
 .contenedor-navegacion{
@@ -239,8 +245,11 @@ video {
     font-size: 5rem;
     text-align: center;
 }
+.texto-nosotros p{
+    text-align: center;
+}
 @media(min-width: 768px){
-    .texto-nosotros h1{
+    .texto-nosotros h1, .texto-nosotros p{
         text-align: left;
     }
 }
@@ -266,4 +275,73 @@ video {
 }
 .imagenes2 img{
     margin-bottom: 1rem;
+}
+
+/* platillos */
+.menu {
+    padding-top: 4rem;
+}
+.texto-platillos{
+    text-align: center;
+    font-size: 5rem;
+}
+.botones-platillos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.botones-platillos button {
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
+}
+@media(min-width: 768px){
+    .botones-platillos{
+        display: inline-block;
+    }
+    .botones-platillos button{
+        flex: unset;
+    }
+}
+@media(min-width: 768px){
+    .platillos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+}
+.platillos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.platillo{
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.platillo h2{
+    text-align: center;
+}
+.platillo p{
+    font-size: 1.8rem;
+}
+.precio {
+    display: flex;
+    justify-content: space-between;
+}
+.precio p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.precio button{
+    padding: 0rem 1.5rem ;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-family: var(--parrafos);
+    font-weight: bold;
 }
